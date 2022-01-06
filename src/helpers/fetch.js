@@ -1,8 +1,9 @@
-const baseURL = 'http://localhost:3001/api';
+const baseURL =import.meta.env.VITE_API_URL +'/api';
 
 export const fetchSinToken = async (endpoint, data, method = 'GET') => {
 
     const url = `${baseURL}/${endpoint}`;
+    console.log(url)
 
     if( method == 'GET' ){
         const resp = await  fetch(url);
@@ -34,8 +35,7 @@ export const fetchConToken = async (endpoint, data={}, method = 'GET') => {
         const resp = await fetch( url, {
             method,
             headers: {
-                'Content-type': 'application/json',
-                'x-token': token
+                'Content-type': 'application/json', 'x-token': token
             },
             body: JSON.stringify(data) 
         } );

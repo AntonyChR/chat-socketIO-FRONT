@@ -1,6 +1,5 @@
 import {createContext, useCallback, useState} from 'react';
 import {fetchConToken, fetchSinToken} from '../helpers/fetch';
-import {types} from '../types/types';
 
 export const AuthContext = createContext();
 
