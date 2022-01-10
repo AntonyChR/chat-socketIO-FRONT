@@ -64,7 +64,7 @@ export const LoginPage = () => {
 
     return (
         <form onSubmit = {onSubmit} className='login100-form validate-form flex-sb flex-w'>
-            <span className='login100-form-title mb-3'>Chat</span>
+            <span className='login100-form-title mb-3'>Login</span>
 
             <div className='wrap-input100 validate-input mb-3'>
                 <input
