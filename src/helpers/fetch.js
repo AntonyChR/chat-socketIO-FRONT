@@ -6,7 +6,7 @@ export const fetchSinToken = async (endpoint, data, method = 'GET') => {
     console.log(url)
 
     if( method == 'GET' ){
-        const resp = await  fetch(url);
+        const resp = await fetch(url);
         return await resp.json();
     } else {
         const resp = await fetch( url, {
